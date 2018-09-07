@@ -1,0 +1,209 @@
+body{
+	padding:1%;
+	margin:1%;
+}
+
+header{
+	background:#c0c0c0;
+	/*background-color: #848e66;*/
+	background-image: url("http://intro-webdesign.com/CSS/assignment-2/images/flywheel.jpg");
+	background-repeat:no-repeat;
+	background-size: 100%;
+	padding:1%;
+}
+
+h1{
+	text-align: center;
+	color:#ffffff;
+	font-size: x-large;
+	text-decoration: uppercase;
+	font-family:Trebuchet MS,Helvetica,sans-serif;
+	position: relative;
+	top:-20px;
+}
+
+h2{
+	color: #000000; /* Black */
+		text-transform: uppercase; /* style headings to have uppercase text */
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		font-size: 25px;
+}
+nav{
+	text-align: center;
+}
+
+nav a{
+	display:inline-block;
+	margin:2%;
+
+	-webkit-border-radius:3;
+	-moz-border-radius:3;
+	-o-border-radius:3;
+	border-radius: 5px;
+
+	text-decoration: none;
+	padding:2%;
+
+	color:#000000;
+	text-align: center;
+	vertical-align: middle;
+	background-color: rgba(218,234,213,0.60);
+	width:150px;
+	height:20px;
+}
+
+.active{
+	background-color: #ffffff;
+}
+
+.left{
+	background-color: #848e66;
+	width:24%;
+	float:left;
+	padding:5% 0;
+}
+
+.right{
+	width:74%;
+	display:inline-block;
+	padding-left:2%;
+}
+
+.left img{
+	border: solid 1px #000000;
+	width: 80%;
+	margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 1%;
+		margin-bottom: 1%;
+}
+
+p{
+	font-family:"Palatino Linotype","Book Antiqua", Palatino, serif ;
+	font-size: 20px;                                                                                                                                                                  
+}
+
+table{
+	border-collapse: collapse;
+	width:500px;
+	font-family: "Times New Roman", Times, serif;
+   		font-weight: bold;
+   		font-size: 80%;
+}
+
+th{
+	background:#808000;
+	color:#ffffff;
+	border:2px solid #ffffff;
+	background-image: url('http://www.photos-public-domain.com/wp-content/uploads/2011/03/olive-green-parchment-paper-texture.jpg')
+	background-repeat:no-repeat;
+    
+}
+
+
+td{
+	background:#e0ffff;
+	color:#808080;
+	border:2px solid #ffffff;
+	text-align: center;
+}
+
+table,td,th{
+	padding:1%;
+}
+
+tr th:first-child, tr td:first-child{
+	text-align:left; /*text in first colum is left*/
+}
+
+tr td{
+	opacity:0.8;
+}
+
+/*opacity of a row when it is hovered over*/
+tr td:hover{
+	opacity:2.5;
+	text-align: center;
+	font-size:120%;
+}
+
+@media (min-width: 801px) and (max-width: 1199px){
+	body{
+		padding:1%;
+		margin:1%;
+	}
+
+	header{
+		background:#c0c0c0;
+		background-image: url("http://intro-webdesign.com/CSS/assignment-2/images/flywheel.jpg");
+		background-repeat: no-repeat;
+		background-size: 100%; 
+		padding: 1%;
+	}
+nav {
+		text-align: center;
+	}
+
+	nav a {
+		background-color: rgba(218,234,213,0.60);
+		color: #000000; /* Black */
+		display: inline-block;
+		padding: 15px;
+		margin: 5%; 
+		text-decoration: none; 
+		border-radius: 5px; 
+
+	}
+
+	/* The link to the current page should be styled differently from the other links (using class = "active') */ 
+	.right table{
+	width: 75%; /*This sets the width of the entire table to 75%*/
+	margin-left: 25%;/*This gives 25% extra space to the left of the table*/
+	border: 2px solid black; /*Sets table border to black 2px*/
+	border-radius:25px 25px 0 0;/*To give round edges on the top of the table*/
+	box-shadow: 10px 10px #A8A7A6;
+	
+}
+
+/*Design of table elements*/
+td{	
+	padding: 5px;/*Sets padding to each table element*/
+}
+ 
+.right td{
+	width: 15px;/*width of the table cell*/
+	height: 25px;/*height of the table cell*/
+	text-align: center;/*text alignment of table texts*/
+	opacity: .8; /*opacity of table*/
+}		
+  
+td:first-child{
+	text-align: left; /*To left align first column*/
+}
+
+/*Design of the table header*/
+th{
+	text-align: center;/*To center align header texts*/  
+    color: black;/*To set the header text color to white*/
+	padding: 15px; /*To set padding in header*/
+	border-bottom: 5px solid #F8D159; /*To set thicker header bottom border*/
+	background-image: url("..//images/test.jpg"); /*To set header background image*/
+ }
+ 
+/*To set round upper corners in header background*/
+table th:first-child{
+  border-radius:25px 0 0 0;
+}
+table th:last-child{
+  border-radius:0 25px 0 0;
+}
+/*To set alterate row colors*/
+ tr:nth-child(even) {background-color: #99E784;
+ }
+  tr:nth-child(odd) {background-color: #97AFB3;
+ }
+ /*To change the opacity and font color of a row when it is hovered over */
+ tr:hover {color: #12049A;
+		  opacity:  .6;
+ }
+ 
